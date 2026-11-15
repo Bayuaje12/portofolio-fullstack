@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bayu | Fullstack Developer (Node.js &amp; React)</title>
+  <meta name="description" content="Portofolio fullstack web developer berfokus pada arsitektur API Node.js dan antarmuka web interaktif React.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#konten-utama" class="skip-link">Lompat langsung ke konten utama</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#beranda" class="brand-link" aria-label="Bayu - Halaman Depan">
+        <span class="brand-name">Bayu</span>
+        <span class="brand-role">Fullstack Engineer</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Navigasi Utama">
+        <ul class="nav-list">
+          <li><a href="#proyek" class="nav-link">Proyek</a></li>
+          <li><a href="#keahlian" class="nav-link">Keahlian</a></li>
+          <li><a href="#tentang" class="nav-link">Pendekatan Kerja</a></li>
+          <li><a href="#kontak" class="nav-link">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="btn-theme-toggle" type="button" aria-pressed="false" aria-label="Ganti ke tema gelap">
+          <span class="theme-icon theme-icon-sun" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </span>
+          <span class="theme-icon theme-icon-moon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+          <span class="theme-label" id="theme-status-text">Mode Gelap</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="konten-utama">
+    <section id="beranda" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="status-indicator">Tersedia untuk proyek freelance dan peran rekayasa web purnawaktu</p>
+          <h1 class="hero-title">Pengembang Fullstack spesialisasi Node.js dan React</h1>
+          <p class="hero-summary">
+            Saya merancang backend modular dengan Express dan NestJS, mengelola kueri relasional PostgreSQL, serta membangun antarmuka web terstruktur menggunakan React dan TypeScript.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#proyek" class="btn btn-primary">Lihat Studi Kasus Proyek</a>
+            <a href="#kontak" class="btn btn-secondary">Kirim Pesan Kerja Sama</a>
+          </div>
+        </div>
+
+        <div class="hero-card" aria-labelledby="ringkasan-fokus-title">
+          <div class="card-header-compact">
+            <h2 id="ringkasan-fokus-title" class="card-compact-title">Ringkasan Lingkup Teknis</h2>
+          </div>
+          <ul class="technical-points">
+            <li>
+              <strong>Backend Node.js:</strong> Pembuatan RESTful API terstruktur, autentikasi berbasis JWT dengan refresh token, middleware validasi, dan penanganan transaksi data.
+            </li>
+            <li>
+              <strong>Frontend React:</strong> Komponen modular fungsional, pengelolaan state terarah dengan Zustand atau Context API, form handling dengan validasi skema ketat.
+            </li>
+            <li>
+              <strong>Basis Data &amp; Infrastruktur:</strong> Pemodelan skema relasional PostgreSQL, pengindeksan kueri, integrasi Redis untuk caching, serta orkestrasi kontainer Docker.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyek" class="section projects-section">
+      <div class="container">
+        <div class="section-heading">
+          <h2 class="section-title">Proyek Rekayasa Perangkat Lunak</h2>
+          <p class="section-desc">
+            Kumpulan aplikasi yang dibangun dengan pemisahan tugas backend dan frontend secara transparan, lengkap dengan catatan arsitektur serta keputusan teknis.
+          </p>
+        </div>
+
+        <div class="project-list">
+          <article class="project-item">
+            <div class="project-header">
+              <span class="project-category">Sistem Backend &amp; Dasbor Web</span>
+              <h3 class="project-title">Logistiq: Platform Pelacak Pengiriman Paket</h3>
+            </div>
+            <div class="project-body">
+              <p class="project-description">
+                Aplikasi manajemen logistik rute pengiriman paket yang menangani pembaruan status kurir secara real-time dan rekapitulasi manifes muatan gudang.
+              </p>
+              
+              <div class="project-architecture-grid">
+                <div class="arch-block">
+                  <h4 class="arch-title">Backend (Node.js &amp; PostgreSQL)</h4>
+                  <ul class="arch-list">
+                    <li>Arsitektur controller, service, dan repository untuk pemisahan domain bisnis.</li>
+                    <li>Autentikasi role-based access control (admin gudang, staf sortir, kurir).</li>
+                    <li>Kueri PostgreSQL dengan transaksi ACID untuk pencatatan mutasi status paket.</li>
+                  </ul>
+                </div>
+                <div class="arch-block">
+                  <h4 class="arch-title">Frontend (React &amp; TypeScript)</h4>
+                  <ul class="arch-list">
+                    <li>Dasbor operasional dengan filter status berbasis parameter URL via React Router.</li>
+                    <li>Optimasi tabel data ratusan baris menggunakan pagination sisi server.</li>
+                    <li>Penanganan status muat (loading), peringatan galat (error), dan tampilan data kosong.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="tech-tags" aria-label="Teknologi yang digunakan">
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Tailwind CSS</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/example/logistiq-platform" class="btn-text-link" target="_blank" rel="noopener noreferrer">
+                  <span>Lihat Kode Sumber</span>
+                  <span class="link-external-note">(GitHub)</span>
+                </a>
+                <button type="button" class="btn-outline-action" data-demo="logistiq" aria-expanded="false" aria-controls="demo-logistiq">
+                  Simulasikan Panggilan API
+                </button>
+              </div>
+
+              <div id="demo-logistiq" class="interactive-preview" hidden>
+                <div class="preview-header">
+                  <span class="preview-label">Log Interaksi API Terkendali</span>
+                  <button type="button" class="preview-close" data-close="logistiq" aria-label="Tutup simulasi API">Tutup</button>
+                </div>
+                <div class="preview-content">
+                  <p class="preview-instruction">Pilih permintaan HTTP untuk memeriksa skenario respons dari arsitektur backend:</p>
+                  <div class="preview-button-row">
+                    <button type="button" class="btn-sample-req" data-endpoint="manifest-success">GET /api/v1/shipments/manifest (200 OK)</button>
+                    <button type="button" class="btn-sample-req" data-endpoint="manifest-empty">GET /api/v1/shipments/manifest (200 Kosong)</button>
+                    <button type="button" class="btn-sample-req" data-endpoint="manifest-error">POST /api/v1/shipments (422 Validasi Gagal)</button>
+                  </div>
+                  <pre class="api-output-box" tabindex="0" aria-label="Hasil respons JSON"><code id="code-output-logistiq">// Klik salah satu tombol di atas untuk melihat payload respons nyata</code></pre>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-item">
+            <div class="project-header">
+              <span class="project-category">Aplikasi Produktivitas &amp; Transaksi</span>
+              <h3 class="project-title">Kasirku: Point of Sale &amp; Manajemen Stok Toko Retail</h3>
+            </div>
+            <div class="project-body">
+              <p class="project-description">
+                Solusi point-of-sale untuk toko kelontong dan ritel independen dengan fitur cetak struk lokal, proteksi selisih stok, dan kalkulasi diskon bertingkat.
+              </p>
+              
+              <div class="project-architecture-grid">
+                <div class="arch-block">
+                  <h4 class="arch-title">Backend (Node.js &amp; SQLite/Postgres)</h4>
+                  <ul class="arch-list">
+                    <li>Validasi payload pesanan menggunakan Zod sebelum data masuk ke lapisan persistensi.</li>
+                    <li>Sistem lock baris data untuk mencegah penjualan barang saat stok tersisa nol.</li>
+                    <li>Ekspor laporan pendapatan harian dalam format CSV dan JSON terstruktur.</li>
+                  </ul>
+                </div>
+                <div class="arch-block">
+                  <h4 class="arch-title">Frontend (React SPA)</h4>
+                  <ul class="arch-list">
+                    <li>Keranjang belanja responsif yang dikelola via custom hook dan state lokal.</li>
+                    <li>Dukungan navigasi keyboard penuh untuk pemindaian barcode tanpa mouse.</li>
+                    <li>Sinkronisasi data offline sementara menggunakan IndexedDB browser.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="tech-tags" aria-label="Teknologi yang digunakan">
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">React 18</span>
+                <span class="tech-tag">Zod</span>
+                <span class="tech-tag">IndexedDB</span>
+                <span class="tech-tag">CSS Modules</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/example/kasirku-pos" class="btn-text-link" target="_blank" rel="noopener noreferrer">
+                  <span>Lihat Kode Sumber</span>
+                  <span class="link-external-note">(GitHub)</span>
+                </a>
+                <button type="button" class="btn-outline-action" data-calculator="toggle" aria-expanded="false" aria-controls="calculator-box">
+                  Uji Kalkulator Diskon Kasir
+                </button>
+              </div>
+
+              <div id="calculator-box" class="interactive-preview" hidden>
+                <div class="preview-header">
+                  <span class="preview-label">Kalkulator Logika Diskon Bertingkat (Fungsi Pure Frontend)</span>
+                  <button type="button" class="preview-close" data-close="calc" aria-label="Tutup kalkulator">Tutup</button>
+                </div>
+                <div class="preview-content">
+                  <form id="calc-form" class="calc-form">
+                    <div class="calc-field-group">
+                      <label for="subtotal-input" class="form-label">Subtotal Belanja (Rp)</label>
+                      <input type="number" id="subtotal-input" class="form-input" min="0" step="1000" value="150000" required>
+                    </div>
+                    <div class="calc-field-group">
+                      <label for="member-select" class="form-label">Status Pelanggan</label>
+                      <select id="member-select" class="form-select">
+                        <option value="reguler">Pelanggan Reguler (0%)</option>
+                        <option value="member">Anggota Terdaftar (5%)</option>
+                        <option value="vip">Mitra Grosir (10%)</option>
+                      </select>
+                    </div>
+                    <button type="submit" class="btn btn-secondary">Hitung Total Akhir</button>
+                  </form>
+                  <div class="calc-result" id="calc-result-display" aria-live="polite">
+                    <p class="calc-summary">Total Akhir: <strong>Rp 142.500</strong> (Diskon diterapkan: 5%)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="keahlian" class="section skills-section">
+      <div class="container">
+        <div class="section-heading">
+          <h2 class="section-title">Keahlian &amp; Ruang Lingkup Kerja</h2>
+          <p class="section-desc">
+            Peralatan dan teknologi yang saya gunakan sehari-hari untuk merancang solusi perangkat lunak yang andal dan mudah dirawat.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3 class="skill-category-title">Backend &amp; Layanan API</h3>
+            <p class="skill-category-desc">Fokus pada pembuatan alur data yang aman, performa kueri, dan penanganan galat terstandar.</p>
+            <ul class="skill-item-list">
+              <li>
+                <span class="skill-name">Node.js (LTS &amp; Modern)</span>
+                <span class="skill-detail">Runtime utama untuk pemrosesan I/O non-blocking, manipulasi stream berkas, dan task runner.</span>
+              </li>
+              <li>
+                <span class="skill-name">Express.js &amp; NestJS</span>
+                <span class="skill-detail">Routing terstruktur, pipeline middleware otorisasi, penanganan error terpusat, dan integrasi Swagger.</span>
+              </li>
+              <li>
+                <span class="skill-name">PostgreSQL &amp; Prisma/Knex</span>
+                <span class="skill-detail">Perancangan skema relasional terarah, migrasi berkas, indeks komposit, dan isolasi transaksi data.</span>
+              </li>
+              <li>
+                <span class="skill-name">Redis Caching</span>
+                <span class="skill-detail">Penyimpanan sesi otentikasi cepat dan cache respons endpoint untuk mereduksi beban basis data.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3 class="skill-category-title">Frontend &amp; Antarmuka Klien</h3>
+            <p class="skill-category-desc">Membangun interaksi pengguna yang responsif, aksesibel, dan terhubung mulus dengan data backend.</p>
+            <ul class="skill-item-list">
+              <li>
+                <span class="skill-name">React &amp; Hooks</span>
+                <span class="skill-detail">Komposisi komponen modular, pemisahan kontainer logika dan presentasi, serta pemanfaatan custom hooks.</span>
+              </li>
+              <li>
+                <span class="skill-name">TypeScript</span>
+                <span class="skill-detail">Penerapan tipe ketat (strict typing) untuk kontrak antarmuka API, props komponen, dan pencegahan runtime bug.</span>
+              </li>
+              <li>
+                <span class="skill-name">Manajemen Status (State)</span>
+                <span class="skill-detail">Pengelolaan state global terprediksi menggunakan Zustand atau Context API untuk alur aplikasi kompleks.</span>
+              </li>
+              <li>
+                <span class="skill-name">Aksesibilitas &amp; Semantik HTML</span>
+                <span class="skill-detail">Kepatuhan standar WCAG AA, navigasi keyboard penuh, pemanfaatan atribut ARIA yang valid, dan form terstruktur.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3 class="skill-category-title">Praktik Rekayasa &amp; Operasional</h3>
+            <p class="skill-category-desc">Fondasi alur kerja pengembang untuk menjamin konsistensi lingkungan kode dan stabilitas pengiriman rilis.</p>
+            <ul class="skill-item-list">
+              <li>
+                <span class="skill-name">Kontrol Versi Git</span>
+                <span class="skill-detail">Pencabangan berbasis fitur terstruktur, rebase interaktif, dan pull request deskriptif.</span>
+              </li>
+              <li>
+                <span class="skill-name">Kontainerisasi Docker</span>
+                <span class="skill-detail">Pembuatan Dockerfile multi-stage untuk lingkungan pengembangan lokal dan penyeragaman basis data.</span>
+              </li>
+              <li>
+                <span class="skill-name">Pengujian Otomatis (Jest / Supertest)</span>
+                <span class="skill-detail">Unit test logika domain bisnis dan integration test endpoint API sebelum deployment.</span>
+              </li>
+              <li>
+                <span class="skill-name">CI/CD GitHub Actions</span>
+                <span class="skill-detail">Automasi linting ESLint, pemeriksaan tipe TypeScript, dan eksekusi test pada setiap merge commit.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tentang" class="section about-section">
+      <div class="container about-container">
+        <div class="section-heading">
+          <h2 class="section-title">Pendekatan Pengembangan Perangkat Lunak</h2>
+          <p class="section-desc">Prinsip kerja yang saya pegang dalam mengeksekusi proyek dari fase spesifikasi hingga produksi.</p>
+        </div>
+
+        <div class="methodology-grid">
+          <div class="method-card">
+            <h3 class="method-title">1. Kontrak API yang Jelas Sebelum Menulis UI</h3>
+            <p class="method-text">
+              Saya selalu memvalidasi skema payload JSON dan kode status HTTP sebelum menyusun komponen React. Cara ini menghilangkan kebingungan antara frontend dan backend saat integrasi berlangsung.
+            </p>
+          </div>
+          <div class="method-card">
+            <h3 class="method-title">2. Ketahanan Sistem di Luar Jalur Utama</h3>
+            <p class="method-text">
+              Aplikasi tidak hanya dirancang untuk kondisi sukses. Setiap halaman web wajib memiliki penanganan keadaan memuat, keadaan galat jaringan yang memberi arahan tindakan, dan tampilan data kosong yang jelas.
+            </p>
+          </div>
+          <div class="method-card">
+            <h3 class="method-title">3. Kode Bersih Tanpa Ketergantungan Berlebih</h3>
+            <p class="method-text">
+              Mengutamakan fitur bawaan runtime modern (Node.js native modules dan modern browser APIs) daripada menambahkan puluhan dependensi npm pihak ketiga yang tidak esensial.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontak" class="section contact-section">
+      <div class="container contact-container">
+        <div class="section-heading">
+          <h2 class="section-title">Mulai Diskusi Teknis</h2>
+          <p class="section-desc">
+            Punya kebutuhan pengembangan API Node.js, aplikasi web React, atau ingin mendiskusikan peluang kerja sama? Silakan kirimkan rincian kebutuhan Anda.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          <div class="contact-info-panel">
+            <h3 class="contact-subhead">Kanal Komunikasi Langsung</h3>
+            <p class="contact-note">
+              Saya biasanya merespons pesan dalam waktu 1x24 jam kerja. Anda juga dapat menghubungi langsung melalui saluran alternatif berikut:
+            </p>
+
+            <ul class="contact-channels">
+              <li class="channel-item">
+                <span class="channel-label">Email Resmi:</span>
+                <a href="mailto:bayu.fullstack@example.com" class="channel-link">bayu.fullstack@example.com</a>
+              </li>
+              <li class="channel-item">
+                <span class="channel-label">Profil GitHub:</span>
+                <a href="https://github.com/example" class="channel-link" target="_blank" rel="noopener noreferrer">github.com/example (Kode &amp; Eksperimen)</a>
+              </li>
+              <li class="channel-item">
+                <span class="channel-label">Zona Waktu Kerja:</span>
+                <span class="channel-text">WIB (UTC+7), Jakarta, Indonesia</span>
+              </li>
+            </ul>
+
+            <div class="availability-card">
+              <h4 class="avail-title">Ketersediaan Saat Ini</h4>
+              <p class="avail-text">
+                Menerima kontrak proyek pengembangan modul backend baru, audit performa kueri database, serta pembuatan antarmuka React dari desain Figma.
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-form-panel">
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Nama Lengkap <span class="required-mark" aria-hidden="true">*</span></label>
+                <input type="text" id="contact-name" name="name" class="form-input" autocomplete="name" required aria-describedby="name-error">
+                <span id="name-error" class="form-error-text" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Alamat Email <span class="required-mark" aria-hidden="true">*</span></label>
+                <input type="email" id="contact-email" name="email" class="form-input" autocomplete="email" required aria-describedby="email-error">
+                <span id="email-error" class="form-error-text" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-project-type" class="form-label">Tipe Kebutuhan Proyek</label>
+                <select id="contact-project-type" name="projectType" class="form-select">
+                  <option value="fullstack">Pengembangan Fullstack (Node.js + React)</option>
+                  <option value="backend">Layanan Backend &amp; Perancangan Database</option>
+                  <option value="frontend">Pengembangan Antarmuka React SPA</option>
+                  <option value="consulting">Konsultasi Teknis &amp; Code Review</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Deskripsi Kebutuhan atau Pesan <span class="required-mark" aria-hidden="true">*</span></label>
+                <textarea id="contact-message" name="message" class="form-textarea" rows="5" required aria-describedby="message-error" placeholder="Jelaskan gambaran sistem, batas waktu, atau permasalahan teknis yang ingin diselesaikan..."></textarea>
+                <span id="message-error" class="form-error-text" aria-live="polite"></span>
+              </div>
+
+              <button type="submit" id="btn-submit-contact" class="btn btn-primary btn-submit">
+                <span>Kirimkan Pesan Anda</span>
+              </button>
+
+              <div id="contact-feedback" class="form-feedback-banner" role="status" aria-live="polite" hidden></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p class="footer-brand">Bayu: Pengembang Web Fullstack</p>
+        <p class="footer-subtext">Dibuat menggunakan HTML semantik, CSS murni, dan JavaScript tanpa runtime eksternal berat.</p>
+      </div>
+
+      <div class="footer-right">
+        <ul class="footer-links">
+          <li><a href="#proyek" class="footer-link">Proyek</a></li>
+          <li><a href="#keahlian" class="footer-link">Keahlian</a></li>
+          <li><a href="#kontak" class="footer-link">Kontak</a></li>
+          <li><a href="#beranda" class="footer-link">Kembali ke Atas</a></li>
+        </ul>
+        <p class="footer-copyright">&copy; <span id="current-year">2025</span> Bayu. Hak cipta dilindungi.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
